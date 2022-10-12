@@ -1,0 +1,35 @@
+name: mlops_template_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+trigger:
+  branches:
+    include:
+    - release*
+pr:
+  branches:
+    include:
+    - main
+
+resources:
+  repositories:
+  - repository: ResourceTrigger
+    type: github
+    name: KIRTHISHKT/ResourceTrigger
+    endpoint: github.com_KIRTHISHKT
+    ref: $(Build.SourceBranch)
+stages:
+- stage: mlops_deploy_code_dev
+  condition: eq(variables['Build.Reason'], 'PullRequest')
+  displayName: mlops_deploy_code_dev
+  variables:
+  - name: System.Debug
+    value: true
+  jobs:
+  - job:
+    steps:
+      - task: PowerShell@2
+        inputs:
+          targetType: 'inline'
+          script: |
+            # Write your PowerShell commands here.
+            
+            Write-Host "Hello World"
+          pwsh: true
