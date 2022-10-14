@@ -23,7 +23,7 @@ resources:
     type: github
     name: KIRTHISHKT/templaterepo
     endpoint: github.com_KIRTHISHKT
-    ref: main
+    ref: test
 
 stages:
   - template: /stage.yml@secondrepo
