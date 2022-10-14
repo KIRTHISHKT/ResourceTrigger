@@ -19,11 +19,11 @@ resources:
     name: KIRTHISHKT/ResourceTrigger
     endpoint: github.com_KIRTHISHKT
     ref: $(Build.SourceBranch)
-  - repository: templaterepo
+  - repository: secondrepo
     type: github
     name: KIRTHISHKT/templaterepo
     endpoint: github.com_KIRTHISHKT
     ref: main
 
 stages:
-  - template: /stage.yml@templaterepo
+  - template: /stage.yml@secondrepo
