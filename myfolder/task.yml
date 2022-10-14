@@ -1,7 +1,7 @@
 jobs:
  - job:
    steps:
-     - task: PowerShell@2
+     - task: PowerShell@2  #added comment to PR branch
        inputs:
          targetType: 'inline'
          script: |
