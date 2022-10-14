@@ -19,7 +19,6 @@ resources:
     name: KIRTHISHKT/ResourceTrigger
     endpoint: github.com_KIRTHISHKT
     ref: $(Build.SourceBranch)
-
   - repository: templaterepo
     type: github
     name: KIRTHISHKT/templaterepo
