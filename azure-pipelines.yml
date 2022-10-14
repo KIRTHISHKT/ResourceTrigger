@@ -19,6 +19,13 @@ resources:
     name: KIRTHISHKT/ResourceTrigger
     endpoint: github.com_KIRTHISHKT
     ref: $(Build.SourceBranch)
+
+  - repository: templaterepo
+    type: github
+    name: KIRTHISHKT/templaterepo
+    endpoint: github.com_KIRTHISHKT
+    ref: main
+
 stages:
 - stage: mlops_deploy_code_dev
   #condition: eq(variables['Build.Reason'], 'PullRequest')
