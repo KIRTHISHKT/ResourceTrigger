@@ -27,4 +27,4 @@ resources:
 
 
 stages:
-  - template: /stage.yml@templaterepo
+  - template: stage.yml@templaterepo
