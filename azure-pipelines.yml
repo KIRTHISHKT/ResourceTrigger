@@ -19,7 +19,7 @@ resources:
       type: github
       name: KIRTHISHKT/templaterepo
       endpoint: github.com_KIRTHISHKT
-      ref: main
+#      ref: main
 #    - repository: ResTri
 #      type: github
 #      name: KIRTHISHKT/ResourceTrigger
