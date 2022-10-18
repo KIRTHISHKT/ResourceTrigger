@@ -6,11 +6,11 @@ pool:
 trigger:
   branches:
     include:
-    - release*
+      - release*
 pr:
   branches:
     include:
-    - main
+      - main
 
 resources:
   repositories:
@@ -24,7 +24,6 @@ resources:
       name: KIRTHISHKT/ResourceTrigger
       endpoint: github.com_KIRTHISHKT
       ref: '$(Build.SourceBranch)'
-
 
 extends:
   template: stage.yml@templaterepository
