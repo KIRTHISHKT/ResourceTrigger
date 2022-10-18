@@ -26,5 +26,5 @@ resources:
 #      endpoint: github.com_KIRTHISHKT
 #      ref: '$(Build.SourceBranch)' 
 
-extends:
-  template: stage123.yml@templaterepository  # Template reference 
+#extends:
+#  template: stage123.yml@templaterepository  # Template reference 
