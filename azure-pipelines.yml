@@ -14,16 +14,16 @@ pr:
 
 resources:
   repositories:
-  - repository: templaterepository
-    type: github
-    name: KIRTHISHKT/templaterepo
-    endpoint: github.com_KIRTHISHKT
-    ref: test
-  - repository: ResourceTrigger
-    type: github
-    name: KIRTHISHKT/ResourceTrigger
-    endpoint: github.com_KIRTHISHKT
-    ref: '$(Build.SourceBranch)'
+    - repository: templaterepository
+      type: github
+      name: KIRTHISHKT/templaterepo
+      endpoint: github.com_KIRTHISHKT
+      ref: test
+    - repository: ResourceTrigger
+      type: github
+      name: KIRTHISHKT/ResourceTrigger
+      endpoint: github.com_KIRTHISHKT
+      ref: '$(Build.SourceBranch)'
 
 
 extends:
