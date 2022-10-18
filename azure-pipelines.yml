@@ -4,9 +4,9 @@ pool:
   name: Demo123
 
 trigger:
-  branches:
-    include:
-      - release*
+ branches:
+   include:
+     - release*
 pr:
   branches:
     include:
@@ -18,7 +18,7 @@ resources:
       type: github
       name: KIRTHISHKT/templaterepo
       endpoint: github.com_KIRTHISHKT
-      ref: test
+      ref: main
     - repository: ResourceTrigger
       type: github
       name: KIRTHISHKT/ResourceTrigger
