@@ -1,4 +1,4 @@
-name: mlops_template_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+#name: mlops_template_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 
 pool:
   name: Demo123
