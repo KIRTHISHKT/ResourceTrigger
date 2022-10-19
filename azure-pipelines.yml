@@ -27,4 +27,4 @@ resources:
       ref: main
 
 extends:
-  template: stage123.yml@templaterepository  # Template reference 
+  template: /stage123.yml@templaterepository  # Template reference 
