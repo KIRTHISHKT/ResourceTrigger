@@ -26,5 +26,5 @@ resources:
 #    ref: $(Build.SourceBranch)
 
 
-extends:
-  template: stage.yml@templaterepository
+stages:
+  - template: stage.yml@templaterepository
