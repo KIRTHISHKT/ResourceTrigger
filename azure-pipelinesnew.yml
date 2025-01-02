@@ -27,4 +27,7 @@ resources:
 
 
 stages:
-  - template: stage.yml@templaterepository
+- stage: hellowWorld
+  jobs:
+    - job: Myjob
+#  - template: stage.yml@templaterepository
